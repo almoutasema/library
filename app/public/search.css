@@ -1,0 +1,113 @@
+/* Styles for the container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styles for the title */
+.title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Styles for the form */
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Styles for the label */
+.label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Styles for the input */
+.input {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styles for the button */
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+    background-color: #0069d9;
+}
+
+/* Styles for the results container */
+.results {
+    margin-top: 20px;
+}
+
+/* Styles for the update form */
+.update-inactive {
+    display: none;
+}
+
+.update-active {
+    display: block;
+}
+
+/* Styles for the label in the update form */
+.update-inactive label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Styles for the input in the update form */
+.update-inactive input {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styles for the button in the update form */
+#btnUpdate {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#btnUpdate:hover {
+    background-color: #0069d9;
+}
+
+/* Styles for the delete button */
+.button-delete {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: #dc3545;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.button-delete:hover {
+    background-color: #c82333;
+}

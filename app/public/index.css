@@ -1,0 +1,88 @@
+/* apply a global font size and line height */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* set the link container styles */
+.link-container {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* set the link styles */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+/* set the hover effect on links */
+a:hover {
+    color: #0056b3;
+}
+
+/* set the header styles */
+header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    padding: 20px;
+}
+
+/* set the logo styles */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* set the navigation styles */
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* set the main section styles */
+main {
+    margin: 20px;
+}
+
+/* set the article styles */
+article {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+/* set the heading styles */
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* set the paragraph styles */
+p {
+    margin-bottom: 10px;
+}
+
+/* set the code block styles */
+code {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    display: block;
+    font-family: monospace;
+    padding: 10px;
+}
+
+/* set the preformatted text styles */
+pre {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    font-family: monospace;
+    margin-bottom: 20px;
+    padding: 20px;
+    white-space: pre-wrap;
+}

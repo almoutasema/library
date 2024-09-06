@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>App - Start</title>
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <h1>App > Create</h1>
+
+        <label for="authorId">Author ID</label>
+        <input id="authorId" type="number" name="authorId" autofocus />
+
+        <label for="genre">Genre</label>
+        <input id="genre" type="text" name="genre" />
+
+        <label for="title">Title</label>
+        <input id="title" type="text" name="title" />
+
+        <label for="releaseYear">Release Year</label>
+        <input id="releaseYear" type="number" name="releaseYear" />
+
+        <br />
+
+        <button id="btnSave" type="submit">Spara</button>
+
+        <script>
+            var btnSave = document.querySelector('#btnSave')
+            var authorId = document.querySelector('#authorId')
+            var genre = document.querySelector('#genre')
+            var title = document.querySelector('#title')
+            var releaseYear = document.querySelector('#releaseYear')
+
+            btnSave.addEventListener('click', () => {
+                const options = {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        authorId: authorId.value,
+                        genre: genre.value,
+                        title: title.value,
+                        releaseYear: releaseYear.value
+                    })
+                }
+
+                fetch('http://localhost:3001/bookRoutes/add', options)
+                    .then((response) => console.log(response))
+                    .catch((error) => console.error(error))
+            })
+        </script>
+    </body>
+</html>
