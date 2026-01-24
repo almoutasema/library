@@ -19,13 +19,13 @@ This is a backend project for managing a library system. It provides server-side
    git clone https://github.com/Mats914/library.git
    
 ---
-##2.Install dependencies:
+## 2.Install dependencies:
 
 npm install
 
 ---
 
-##3.Start the server:
+## 3.Start the server:
 
 npm start
 
